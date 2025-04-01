@@ -81,11 +81,15 @@ public class wydarzenie {
         }
         this.cena = cena;
     }
-    public boolean zarreerwujmiejsce(int dostepneMiejsce){
+    public boolean zarreerwujMiejsce(int dostepneMiejsce){
         if (dostepneMiejsce<=0){
             return false;
         }
-        dostepneMiejsce--;
+       dostepneMiejsce--;
         return true;
+    }
+    public String  toString(){
+        String info=nazwa+" "+cena+" "+data+" "+miejsce;
+        return info;
     }
 }

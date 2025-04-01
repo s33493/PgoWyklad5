@@ -40,6 +40,7 @@ public class klient {
     public void setEmail(String email) {
         this.email = email;
     }
+
     public boolean dodajRezerwacje(wydarzenie w){
         listaRezerwacji.add(w);
         return true;
@@ -49,10 +50,11 @@ public class klient {
             System.out.println(w);
         }
     }
-    public void usunrezerwacje(wydarzenie w){
+    //przeciazeniemtody
+    public void anulujRezerwacje(wydarzenie w){
         listaRezerwacji.remove(w);
     }
-    public void usunrezerwacje(String nazwaWydarzenia){
+    public void usunRezerwacje(String nazwaWydarzenia){
         for(int i=0; i<listaRezerwacji.size(); i++){
             if (listaRezerwacji.get(i).getNazwa().equals(nazwaWydarzenia)){
                 listaRezerwacji.remove(i);
