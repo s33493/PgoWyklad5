@@ -48,6 +48,7 @@ public class klient {
     public void wyswietlrezerwacje(){
         for (wydarzenie w : listaRezerwacji){
             System.out.println(w);
+
         }
     }
     //przeciazeniemtody
