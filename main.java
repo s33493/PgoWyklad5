@@ -5,6 +5,8 @@ public class main {
 // Dodaj wydarzenia i klientów
         wydarzenie koncert = new wydarzenie("Koncert Symphony", 120.0,"12.02.2025");
         wydarzenie teatr = new wydarzenie("Hamlet", 85.0,"13.02.2025");
+        koncert.setDostepneMiejsce(100);
+        teatr.setDostepneMiejsce(100);
         system.dodajWydarzenie(koncert);
         system.dodajWydarzenie(teatr);
         klient klient1 = new klient("Jan", "Kowalski", "jan@example.com");

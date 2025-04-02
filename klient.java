@@ -41,9 +41,8 @@ public class klient {
         this.email = email;
     }
 
-    public boolean dodajRezerwacje(wydarzenie w){
-        listaRezerwacji.add(w);
-        return true;
+    public void dodajRezerwacje(wydarzenie wydarzenie){
+        listaRezerwacji.add(wydarzenie);
     }
     public void wyswietlrezerwacje(){
         for (wydarzenie w : listaRezerwacji){
@@ -55,7 +54,7 @@ public class klient {
     public void anulujRezerwacje(wydarzenie w){
         listaRezerwacji.remove(w);
     }
-    public void usunRezerwacje(String nazwaWydarzenia){
+    public void anulujRezerwacje(String nazwaWydarzenia){
         for(int i=0; i<listaRezerwacji.size(); i++){
             if (listaRezerwacji.get(i).getNazwa().equals(nazwaWydarzenia)){
                 listaRezerwacji.remove(i);
